@@ -2,8 +2,10 @@ scipy==1.4.1
 pytorch_lightning==2.0.0
 matplotlib==3.7.1
 torch==2.0.0
-PySocks==1.6.8
+PySocks==1.6.8 
 numpy==1.21.0
 pandas==1.5.3
 cvxopt==1.2.6
 SocksiPy_branch==1.1
+
+#can install any latest version for PySocks and SocksiPy_branch.
