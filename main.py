@@ -81,6 +81,9 @@ def main():
         shutil.rmtree(options.working_dir + "/model")
         config = load_config(options.config)
         save_config(config, options.working_dir + "/config.json")
+        print("--------------------")
+        print('{test_portfolio_value:.2f}')
+        print('{epoch:02d}')
         checkpoint_callback = ModelCheckpoint(\
             dirpath=options.working_dir + "/model",
             filename="{epoch:02d}-{test_portfolio_value:.2f}",
@@ -96,9 +99,10 @@ def main():
         )
         trainer = pl.Trainer( #gpus=0 if options.device == "cpu" else options.device
             accelerator="cpu",        
-            callbacks=[checkpoint_callback, early_stopping],
+            callbacks=[checkpoint_callback],#, early_stopping removed from here because test_portfolio_value was missing from the code. 
+            #No logic, just intuition behind this change but need to figure out why the code was written this way.
             logger=[t_logger],
-            limit_train_batches=1000,
+            limit_train_batches=100, #No of training steps in each epoch
             max_steps=config["training"]["steps"]
         )
         model = TraderTrainer(config,

@@ -454,3 +454,14 @@ The first improvement is adding hyperparameter auto tuning functions, the origin
 The second improvement is adding more data sources except from Poloniex, as we have introduced in the dataflow part, as long as the data interface is compatible with `get_coin_features` they can be used in the framework.
 
 The third improvement is adding rolling training function, our implementation has implemented the `RollingTrainer` class, but haven't finished the part in `main.py` to connect to Poloniex and learning on the live stream, we can also add functions to allow agents learn from expert experience, this is also an important extension to adapt our code to real trading environments. 
+
+The total number of epochs are in the config.json file: 
+"training":{ 
+    "steps":2000, 
+    "learning_rate":0.00028,
+    "batch_size":109,
+    "buffer_biased":5e-5,
+    "fast_train":true,
+    "training_method":"Adam",
+    "loss_function":"loss_function6"
+  },
