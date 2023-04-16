@@ -7,7 +7,7 @@ Link to original [Implementation](https://github.com/ZhengyaoJiang/PGPortfolio)
 
 ### Some notes:
 
-Create a test->database folder and place the data.db file inside it for it to work.
+Create a test->database folder and place the data.db file inside it for it to work. The data file can be downloaded at the following [link](https://drive.google.com/file/d/1Bm00NImEMA8TUjiPKau04JN-3CWj0gBH/view?usp=sharing)
 
 ### Overview
 
