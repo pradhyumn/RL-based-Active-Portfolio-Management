@@ -4,6 +4,9 @@
 
 Link to original [Implementation](https://github.com/ZhengyaoJiang/PGPortfolio)
 
+### Acknowledgement
+
+This project was done as a course requirement for the Active Portfolio Management, Vertically Integrated Project team at New York University for Spring 23.
 
 ### Some notes:
 
@@ -423,7 +426,7 @@ Finally we just need to pass this `LightningModule` to the trainer, and complete
 
 ### Result
 
-For more detailed report and complete table of metrics, please refer to [results](https://github.com/iffiX/PGPortfolio-pytorch/tree/master/results)
+For more detailed report and complete table of metrics, please refer to [results]([https://github.com/results](https://github.com/pradhyumn/RL-based-Active-Portfolio-Management/tree/main/results))
 
 #### Backtest 1
 
